@@ -7,51 +7,79 @@
     <title>Sign Up</title>
     <link rel="icon" type="image/x-icon" href="../src/bajocero.ico.png">
     <link rel="stylesheet" href="../CSS/signup.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
     <header>
-        <!--   Barra de navegación de la pagina   -->
-        <div class="header">
-            <a href="./signup.html" class="logo"><img rel="icon" src="../SRC/bajocero.ico.png" id="LogoMain"></a>
-            <div class="header-right">
-              <a href="../index.html">Home</a>
-              <a href="./contact.html">Contact</a>
-              <a href="./about.html">About</a>
-              <a href="./market.html">Shop</a>
-              <a href="./blog.html">Blog</a>
+            <!--   Barra de navegación de la pagina   -->
+            <div class="header">
+                <a href="./signup.html" class="logo"><img rel="icon" src="../SRC/bajocero.ico.png" id="LogoMain"></a>
+                <div class="header-right">
+                  <a href="../index.html">Home</a>
+                  <a href="./contact.html">Contact</a>
+                  <a href="./about.html">About</a>
+                  <a href="./market.html">Shop</a>
+                  <a href="./blog.html">Blog</a>
+                </div>
+              </div>
+        </header>
+    
+        <!--    Form Style    -->
+        <div class="container">
+            <form action="/action_page.php">
+              <div class="row">
+                <h2 style="text-align:center">Iniciar sesión con Redes Sociales o Manual</h2>
+                <div class="vl">
+                  <span class="vl-innertext">o</span>
+                </div>
+          
+                <div class="col">
+                  <a href="#" class="fb btn">
+                    <i class="fa fa-facebook fa-fw"></i> Iniciar sesión con Facebook
+                   </a>
+                  <a href="#" class="twitter btn">
+                    <i class="fa fa-twitter fa-fw"></i> Iniciar sesión con Twitter
+                  </a>
+                  <a href="#" class="google btn"><i class="fa fa-google fa-fw">
+                    </i> Iniciar sesión con Google
+                  </a>
+                </div>
+          
+                <div class="col">
+                  <div class="hide-md-lg">
+                    <p>O inicia sesión de forma manual</p>
+                  </div>
+          
+                  <input type="text" name="username" placeholder="Nombre de Usuario" required>
+                  <input type="password" name="password" placeholder="Contraseña" required>
+                  <input type="button" value="Iniciar sesión">
+                </div>
+                
+              </div>
+            </form>
+          </div>
+          
+          <div class="bottom-container">
+            <div class="row">
+              <div class="col">
+                <a href="#" style="color:white" class="btn">Registrarse</a>
+              </div>
+              <div class="col">
+                <a href="#" style="color:white" class="btn">Olvidaste tu Contraseña?</a>
+              </div>
             </div>
           </div>
-    </header>
-
-    <section> <!--    Pagina de contacto cliente - empresa  -->
-            <img src="../SRC/Unicorn swag.png" alt="contacto" style="min-width: 50%; max-height: 400px;">
-        <form style="width: 50%;">
-            <fieldset>
-                <legend>Sign Up</legend>
-                <label for="email">Correo Electronico:</label>
-                <input type="email" placeholder="example@example.com" required><br>
-                <label for="password">Password: </label>
-                <input type="password" placeholder="Contraseña"><br>
-                <button type="submit" value="signup">Sign Up</button><br>
-                <button type="button" value="google">Sign Up with Google</button>
-
-            </fieldset>
-        </form>
-    </section>
-            <!--   Pie de pagina  -->
-    <footer>
-        <h4>Mas información de la compañia</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat impedit vel ad laboriosam doloribus eaque magni ex quibusdam eius deleniti quam maxime pariatur dolore modi unde eligendi, distinctio culpa dolorum?</p>
-        <h4>Redes Sociales</h4>
-        <p><a href="https://facebook.com"> Facebook</a></p>
-        <p><a href="https://instagram.com">Instagram</a></p>
-        <h4>Información de Contacto</h4>
-        <p>Calle: X</p>
-        <p>Municipio: X</p>
-        <p>Estado: X</p>
-        <p>Correo: X</p>
-        <p>Numero: X</p>
-        <p>&reg; Todos los derechos reservados | <strong>Bajo Cero Mx</strong></p>
-    </footer>
-</body>
-</html>
+          
+        <!--   Pie de pagina  -->
+        <footer>
+            <div class="col1">
+                <h4>Mas información de la compañia</h4>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat impedit vel ad laboriosam doloribus eaque magni ex quibusdam eius deleniti quam maxime pariatur dolore modi unde eligendi, distinctio culpa dolorum?</p>
+            </div>
+            <div class="col4">
+                <p>&reg; Todos los derechos reservados | <strong>Bajo Cero Mx</strong></p>
+            </div>    
+        </footer>
+    </body>
+    </html>

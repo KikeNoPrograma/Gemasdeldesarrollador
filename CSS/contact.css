@@ -1,13 +1,17 @@
+/* Nav Bar Style  */
+
 * {box-sizing: border-box;}
 
 body { 
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "sofia", sans-serif;
+  background-color: #ffffff;
+  height: 100%;
 }
 
 .header {
   overflow: hidden;
-  background-color: #f1f1f1;
+  background-color: pink;
   padding: 20px 10px;
 }
 
@@ -18,6 +22,7 @@ body {
   padding: 12px;
   text-decoration: none;
   font-size: 18px; 
+  font-family: "sofia", sans-serif;
   line-height: 25px;
   border-radius: 4px;
 }
@@ -38,8 +43,8 @@ body {
 }
 
 .header a.active {
-  background-color: dodgerblue;
-  color: white;
+  background-color: paleturquoise;
+  color: black;
 }
 
 .header-right {
@@ -62,4 +67,94 @@ body {
     align-content: center;
 }
 
+}
+
+/*    Formulario Style    */
+
+.bg-img {
+  /* The image used */
+  background-image: url("../SRC/catBack.png");
+
+  /* Control the height of the image */
+  min-height: auto;
+  max-height: auto;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Add styles to the form container */
+.container {
+  position: relative;
+  left: 0;
+  margin: 0;
+  max-width: 500px;
+  padding: 16px;
+  border-radius: 15px;
+}
+
+form {
+  position: static;
+  left: 100px;
+  margin: 20px;
+  max-width: 500px;
+  padding: 16px;
+  background-color: paleturquoise;
+  border-radius: 15px;
+}
+
+/* Full-width input fields */
+  input[type=text], input[type=password], textarea[type=textarea] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+  border-radius: 15px;
+}
+
+input[type=checkbox] {
+  margin: 20px;
+  position: relative;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  border-radius: 15px;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+
+
+
+
+/*   Footer Style  */
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: pink;
+  color: black;
+  text-align: center;
+}
+
+footer p {
+  font-size: 20px;
 }
