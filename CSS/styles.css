@@ -1,0 +1,243 @@
+/* Nav Bar Style */
+
+* {box-sizing: border-box;}
+
+body { 
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #ffffff;
+}
+
+.header {
+  overflow: hidden;
+  background-color: pink;
+  padding: 20px 10px;
+}
+
+.header a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px; 
+  font-family: "sofia", sans-serif;
+  line-height: 25px;
+  border-radius: 4px;
+}
+
+.header a.logo {
+    padding: 0;
+}
+
+.header a.logo #LogoMain {
+    width: 72px;
+    height: 52px;
+  
+}
+
+.header a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.header a.active {
+  background-color: paleturquoise;
+  color: black;
+}
+
+.header-right {
+  float: right;
+}
+
+@media screen and (max-width: 500px) {
+  .header a {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+  
+  .header-right {
+    float: none;
+  }
+
+  .header a.logo {
+    padding: 0;
+    align-content: center;
+}
+
+}
+
+/*  Main Style  */
+.container {
+    position: relative;
+    max-width: 800px; /* Maximum width */
+    margin: 0 auto; /* Center it */
+  }
+  
+  .container .content {
+    position: absolute; /* Position the background text */
+    top: 50%; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.6); /* Black background with 0.5 opacity */
+    color: white; /* Grey text */
+    text-align: center;
+    font-family: "sofia", sans-serif;
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+  }
+
+/*  Split Style */
+/* Split the screen in half */
+.split {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: auto;
+    width: 100%;
+    padding: 30px;
+    margin: 0;
+    font-family: "sofia", sans-serif;
+  }
+  
+  /* Control the left side */
+  .left {
+    background-color: pink;
+    align-items: center;
+  }
+  
+  /* Control the right side */
+  .right {
+    background-color: paleturquoise;
+    align-items: center;
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    top: 50%;
+    left: 50%;
+    text-align: center;
+  }
+  
+  /* Style the image inside the centered container, if needed */
+  .centered img {
+    width: 300px;
+    height: 300px;
+    border-radius: 25%;
+  }
+
+
+/*  Blog main page  */
+  .col-container {
+    display: table;
+    width: 100%;
+    padding: 0;
+  }
+  .col {
+    display: table-cell;
+    padding: 16px;
+    border: .5px solid;
+    background-color: pink;
+  }
+
+  .col h2 {
+    font-family: "sofia", sans-serif;
+  }
+  
+  @media only screen and (max-width: 600px) {
+    .col { 
+      display: block;
+      width: 100%;
+    }
+  }
+
+  /* Newsletter Style */
+
+.subscribe {
+	display: flex;
+	flex-direction: column;
+    text-align: center;
+	align-items: center;
+    background: paleturquoise;
+	width: 100%;
+	height: 100%;
+    margin: 20px;
+	border-radius: 15px;
+	box-shadow: 0 4px 20px rgba(000, 000, 000, 0.5)
+}
+
+
+.subscribe__title {
+    text-align: center;
+	font-weight: bold;
+	font-size: 26px;
+    font-family: "sofia", sans-serif;
+	margin-bottom: 18px;
+}
+
+.subscribe__copy {
+	max-width: 450px;
+	text-align: center;
+	margin-bottom: 53px;
+    font-family: "sofia", sans-serif;
+	line-height: 1.5;
+}
+
+.form {
+	margin-bottom: 25px;
+}
+
+.form__email {
+	padding: 20px 25px;
+	border-radius: 5px;
+ 	border: 1px solid #CAD3DB;
+	width: auto;
+	font-size: 18px;
+    font-family: "sofia", sans-serif;
+	color: #0F121F;
+}
+
+.form__email:focus {
+	outline: 2px solid pink;
+}
+
+.form__button {
+	background: #3D9FFF;
+	padding: 10px;
+	border: none;
+	width: 100px;
+	height: 65px;
+	border-radius: 5px;
+	font-size: 18px;
+    font-family: "sofia", sans-serif;
+	color: white;
+	box-shadow: 0 4px 20px rgba(61, 159, 255, 0.7);
+}
+
+.form__button:hover {
+	box-shadow: 0 10px 20px rgba(255, 120, 226, 0.719);
+}
+
+.notice {
+	width: auto;
+    margin: 30px;
+    text-align: center;
+    font-family: "sofia", sans-serif;
+}
+
+
+/*   Footer Style  */
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-color: pink;
+    color: black;
+    text-align: center;
+}
+
+footer p {
+    font-size: 20px;
+}
+
