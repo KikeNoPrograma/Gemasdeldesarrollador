@@ -7,6 +7,7 @@
     <title>Contactanos</title>
     <link rel="icon" type="image/x-icon" href="../src/bajocero.ico.png">
     <link rel="stylesheet" href="../CSS/contact.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 </head>
 <body>
     <header>
@@ -23,36 +24,38 @@
           </div>
     </header>
 
-    <section> <!--    Pagina de contacto cliente - empresa  -->
-        <img src="../SRC/Unicorn swag.png" alt="contacto" style="min-width: 50%; max-height: 400px;">
-        <form style="width: 50%;">
-            <fieldset>
-                <legend>Datos de contacto</legend>
-                <label for="name">Nombre: </label>
-                <input type="text" required><br>
-                <label for="email">Correo Electronico:</label>
-                <input type="email" required><br>
-                <label for="phone">Numero Telefónico:</label>
-                <input type="tel"><br>
-                <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comentarios..."></textarea><br>
-                <button type="submit" value="send">Enviar</button>
-            </fieldset>
+    <!--    Form Style    -->
+    <div class="bg-img">
+        <div class="container">
+        <form>
+          <h1>Contact</h1>
+      
+          <label for="name"><b>Nombre Completo</b></label>
+          <input type="text" placeholder="Nombre Completo" name="name" required>
+      
+          <label for="email"><b>Correo Electronico</b></label>
+          <input type="text" placeholder="Ingresa tu correo electronico" name="email" required>
+
+          <label for="comments">Commentarios</label>
+          <textarea type="textarea" placeholder="Comentarios . . ." name="comments" required>
+          </textarea>
+
+          <input type="checkbox" name="terms" required>
+          <label for="terms"> Acepto los terminos y condiciones.</label>
+      
+          <button type="button" class="btn">Enviar</button>
         </form>
-    </section>
+        </div>
+      </div>
     <!--   Pie de pagina  -->
     <footer>
-        <h4>Mas información de la compañia</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat impedit vel ad laboriosam doloribus eaque magni ex quibusdam eius deleniti quam maxime pariatur dolore modi unde eligendi, distinctio culpa dolorum?</p>
-        <h4>Redes Sociales</h4>
-        <p><a href="https://facebook.com"> Facebook</a></p>
-        <p><a href="https://instagram.com">Instagram</a></p>
-        <h4>Información de Contacto</h4>
-        <p>Calle: X</p>
-        <p>Municipio: X</p>
-        <p>Estado: X</p>
-        <p>Correo: X</p>
-        <p>Numero: X</p>
-        <p>&reg; Todos los derechos reservados | <strong>Bajo Cero Mx</strong></p>
+        <div class="col1">
+            <h4>Mas información de la compañia</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat impedit vel ad laboriosam doloribus eaque magni ex quibusdam eius deleniti quam maxime pariatur dolore modi unde eligendi, distinctio culpa dolorum?</p>
+        </div>
+        <div class="col4">
+            <p>&reg; Todos los derechos reservados | <strong>Bajo Cero Mx</strong></p>
+        </div>    
     </footer>
 </body>
 </html>
