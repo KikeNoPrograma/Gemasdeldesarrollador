@@ -7,101 +7,112 @@
     <title>Bajo Cero Mx</title>
     <link rel="icon" type="image/x-icon" href="./src/bajocero.ico.png">
     <link rel="stylesheet" href="./CSS/styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
 </head>
 <body>
     <header>
-        <!--   Barra de navegación de la pagina   -->
-        <nav>
-            <a href="./index.html">Inicio</a>
-            <a href="Pages/about.html">Nosotros</a>
-            <a href="Pages/market.html">Tienda</a>
-            <a href="Pages/blog.html">Blog</a>
-            <a href="Pages/contact.html">Contacto</a>
-            <a href="Pages/signup.html">Sign Up</a>
-        </nav>
+        <!--   Barra de navegación de la pagina Responsiva  -->
+        <div class="header">
+            <a href="" class="logo"><img rel="icon" src="./SRC/bajocero.ico.png" id="LogoMain"></a>
+            <div class="header-right">
+              <a class="active" href="./index.html">Home</a>
+              <a href="#newsletter">Newsletter</a>
+              <a href="#features">Features</a>
+              <a href="#blog">Blog</a>
+            </div>
+          </div>
     </header>
     <!--   Pagina de inicio y presentación   -->
-    <section class="first">
-        <img src="./src/DiseñoBajocero.gif" alt="Somos Bajo Cero Mx" style="width: 100%;">
-    </section>
-    <hr>
-    <!--   Sección de promociones o productos resaltados de la marca   -->
-    <section class="second">
-        <article>
-            <img src="./src/perlanegra.jpg" alt="Paleta sabor perla negra" style="min-width: 50%; max-height: 600px;">
-            <p>Prueba nuestra paleta cocktelera sabor perla negra "incluye alcohol"</p>
-            <button>Comprar</button>
-        </article>
-        <article>
-            <img src="./src/gansito.jpg" alt="Paleta sabor gansito marinela" style="min-width: 50%; max-height: 600px;">
-            <p>Prueba nuestra paleta de crema sabor gansito marinela</p>
-            <button>Comprar</button>
-        </article>
-    </section>
-    <hr>
+    <main>
+        <div class="container">
+            <img src="./SRC/Unicorn swag.png" alt="Unicorn" style="width:100%;">
+            <div class="content">
+              <h1>Bienvenidos a Bajo Cero</h1>
+              <p>El Mejor sabor de México</p>
+            </div>
+          </div>
+    </main>
+        <!--   Sección de promociones o productos resaltados de la marca   -->
+    <div class="split" id="features">
+        <div class="split left">
+            <div class="centered">
+              <img src="./SRC/perlanegra.jpg" alt="Paleta sabor perla negra">
+              <h2>Perla Negra</h2>
+              <p>Prueba nuestra paleta cocktelera sabor perla negra <strong>"incluye alcohol"</strong></p>
+              <button>Comprar</button>
+            </div>
+          </div>
+          
+          <div class="split right">
+            <div class="centered">
+              <img src="./SRC/gansito.jpg" alt="Paleta sabor gansito marinela">
+              <h2>Paleta Gansito</h2>
+              <p>Prueba nuestra paleta de crema sabor gansito marinela</p>
+              <button>Comprar</button>
+            </div>
+          </div>
+    </div>
     <!--   Sección del Blog de la pagina    -->
-    <section class="third"> 
-        <article>
-            <h3>Articulo Blog 1</h3>
-            <img src="./SRC/Articulo 1.jpg" alt="articulo 1" style="min-width: 50%; max-height: 400px;">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis distinctio error, autem sunt magnam odit dolores consequatur veniam dicta! Mollitia ducimus laboriosam sunt necessitatibus vero sequi impedit dolorem provident facilis.</p>
-        </article>
-        <article>
-            <h3>Articulo Blog 2</h3>
-            <img src="./SRC/Articulo 2.jpg" alt="articulo 2" style="min-width: 50%; max-height: 400px;">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi, minima maiores odio nostrum hic aliquid molestiae aut alias perspiciatis minus expedita voluptatibus consectetur ex dolore. Reprehenderit numquam consequuntur quo ab.</p>
-        </article>
-        <article>
-            <h3>Articulo Blog 3</h3>
-            <img src="./SRC/Articulo 3.jpg" alt="articulo 3" style="min-width: 50%; max-height: 400px;">
-            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Atque, neque amet id incidunt, iste perspiciatis at, deleniti quas qui dolores voluptatem maxime ullam. Nihil dolorem hic cupiditate, blanditiis ratione voluptatibus.</p>
-        </article>
-        <article>
-            <h3>Articulo Blog 4</h3>
-            <img src="./SRC/Articulo 1.jpg" alt="articulo 4" style="min-width: 50%; max-height: 400px;">
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aspernatur, itaque iure possimus debitis, excepturi laborum velit provident cupiditate, voluptate nobis ullam quod. Repellendus est fugit dolorum voluptatibus voluptatum sequi?
-            Esse, quia! Placeat iure mollitia culpa, tenetur quibusdam quaerat ipsum sunt saepe architecto dolores voluptatum quidem, eos earum nulla, aspernatur reiciendis? Inventore soluta a saepe laboriosam deserunt deleniti necessitatibus? Eaque.
-            Voluptates maiores officia molestias explicabo nulla ducimus et libero, placeat adipisci reiciendis facere cupiditate nostrum modi temporibus molestiae maxime eveniet aliquid perferendis cum non ad? Esse, dolor et. Ab, earum!</p>
-        </article>
-        <article>
-            <h3>Articulo Blog 5</h3>
-            <img src="./SRC/Articulo 2.jpg" alt="articulo 5" style="min-width: 50%; max-height: 400px;">
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, laudantium, impedit sint nesciunt itaque iure amet sequi enim nulla fugit eos, aliquid voluptatibus molestias in. Quam animi distinctio laboriosam tempore?</p>
-        </article>
-        <article>
-            <h3>Articulo Blog 6</h3>
-            <img src="./SRC/Articulo 3.jpg" alt="articulo 6" style="min-width: 50%; max-height: 400px;">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem reiciendis, nam autem vitae quas neque voluptatibus sunt aspernatur voluptas praesentium porro eius laudantium, animi harum magnam asperiores, delectus omnis quam!</p>
-        </article>
-    </section>
-    <hr>
+    <div class="col-container" id="blog">
+        <div class="col">
+          <h2>Blog 1</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse odit enim nihil sequi eaque dignissimos blanditiis voluptas reprehenderit, mollitia officiis ipsa neque commodi fugiat ipsum? Deleniti minus suscipit illum asperiores.</p>
+        </div>
+      
+        <div class="col">
+          <h2>Blog 2</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi inventore neque aut eius molestias maxime debitis magni architecto dolore, libero ratione earum rem tenetur perferendis sit! Ea obcaecati assumenda dolore!</p>
+        </div>
+
+        <div class="col">
+          <h2>Blog 3</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores nulla quibusdam quam ut placeat possimus, autem magnam velit eligendi quaerat nostrum natus eveniet error fugiat sapiente nam. Incidunt, eveniet laboriosam?</p>
+        </div>
+    </div>
+    <div class="col-container">
+        <div class="col">
+            <h2>Blog 4</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint dolores rerum repudiandae veritatis enim quia ea explicabo saepe corporis delectus atque, sapiente exercitationem culpa est magni ipsa natus facilis. Dolorem!</p>
+        </div>
+        
+        <div class="col">
+            <h2>Blog 5</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A sint reiciendis cum! Illo, repellendus voluptatum dicta accusantium commodi dolorum numquam, veritatis labore non adipisci nisi asperiores, quaerat ipsa quos itaque.</p>
+        </div>
+        
+        <div class="col">
+            <h2>Blog 6</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus voluptas aut, id repudiandae illo nam debitis minus beatae dicta inventore doloribus ipsum sed ex nisi autem harum soluta fuga nihil.</p>
+        </div>
+      </div>
+
+      
     <!--   Newsletter de la pagina   -->
-    <section class="fourth">
-        <form action="Newsletter" style="width: 50%;">
-            <fieldset>
-                <input placeholder="Ingresa tu correo electronico"><br>
-                <label>Suscribete a nuestro Newsletter para recibir promociones</label><br>
-                <input type="checkbox" id="terms" name="terms" value="accept">
-                <label for="terms">Acepto los<a href="#">Terminos y condiciones</a></label><br>
-                <button type="submit">Suscribirme</button>
-            </fieldset>
-        </form>
-        <img src="./SRC/Unicorn swag.png" alt="Formulario" style="min-width: 50%; max-height: 400px;">
-    </section>
+    <div class="container" id="newsletter">
+    <div class="subscribe">
+        <h2 class="subscribe__title">Uneté a la comunidad de Bajo Cero y hazté fresco</h2>
+        <p class="subscribe__copy">Subscribete para obtener promociones unicas!</p>
+        <div class="form">
+            <input type="email" class="form__email" placeholder="Ingresa tu correo electronico" />
+            <button class="form__button">Enviar</button>
+        </div>
+        <div class="notice">
+            <input type="checkbox">
+            <span class="notice__copy">Acepto mi suscripción a <strong>Bajo Cero</strong> para recibir publicidad por correo.</span>
+        </div>
+    </div>
+    </div>
     <!--   Pie de pagina  -->
     <footer>
-        <h4>Mas información de la compañia</h4>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat impedit vel ad laboriosam doloribus eaque magni ex quibusdam eius deleniti quam maxime pariatur dolore modi unde eligendi, distinctio culpa dolorum?</p>
-        <h4>Redes Sociales</h4>
-        <p><a href="https://facebook.com"> Facebook</a></p>
-        <p><a href="https://instagram.com">Instagram</a></p>
-        <h4>Información de Contacto</h4>
-        <p>Calle: X</p>
-        <p>Municipio: X</p>
-        <p>Estado: X</p>
-        <p>Correo: X</p>
-        <p>Numero: X</p>
-        <p>&reg; Todos los derechos reservados | <strong>Bajo Cero Mx</strong></p>
+        <div class="col1">
+            <h4>Mas información de la compañia</h4>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellat impedit vel ad laboriosam doloribus eaque magni ex quibusdam eius deleniti quam maxime pariatur dolore modi unde eligendi, distinctio culpa dolorum?</p>
+        </div>
+        <div class="col4">
+            <p>&reg; Todos los derechos reservados | <strong>Bajo Cero Mx</strong></p>
+        </div>    
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 </body>
 </html>
